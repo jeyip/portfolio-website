@@ -1,0 +1,27 @@
+.mobileFooter__mediumIcon {
+  font-size: 18px;
+}
+
+.mobileFooter__githubIcon {
+  font-size: 18px;
+}
+
+.mobileFooter__linkedinIcon {
+  font-size: 20px;
+}
+
+.mobileFooter__iconContainer {
+  background-color: #48BDBE;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  color: #FFF;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
+
+.mobileFooter__iconContainer:hover {
+  background-color: #FFF;
+  color: #48BDBE;
+  transition: .3s all;
+}

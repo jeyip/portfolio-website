@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+
+require("typeface-dosis")
+require("typeface-open-sans")

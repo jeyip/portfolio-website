@@ -1,21 +1,38 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component } from "react"
+import MediaQuery from "react-responsive"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import AboutMeView from "../components/AboutMeView/AboutMeView"
+import MobileAboutMeView from "../components/Mobile/AboutMeView/AboutMeView"
+import Footer from "../components/Footer/Footer"
+import MobileFooter from "../components/Mobile/Footer/Footer"
+import HomeView from "../components/HomeView/HomeView"
+import MobileHomeView from "../components/Mobile/HomeView/HomeView"
+import WorkView from "../components/WorkView/WorkView"
+import MobileWorkView from "../components/Mobile/WorkView/WorkView"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <MediaQuery minDeviceWidth={481}>
+          <div>
+            <HomeView />
+            <WorkView />
+            <AboutMeView />
+            <Footer />
+          </div>
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={320} maxDeviceWidth={480}>
+          <div>
+            <MobileHomeView />
+            <MobileWorkView />
+            {/* <MobileAboutMeView /> */}
+            <MobileFooter />
+          </div>
+        </MediaQuery>
+      </div>
+    )
+  }
+}
 
-export default IndexPage
+export default App
