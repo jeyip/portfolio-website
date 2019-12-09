@@ -1,4 +1,4 @@
-import React from "react"
+import React from "React"
 
 export const addDesktopLayout = (Component, style = {}) => {
   const defaultStyle = {

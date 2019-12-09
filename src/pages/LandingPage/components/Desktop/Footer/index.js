@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 
 import "./footer.css"
-import Icon from "./Icon.jsx"
+import Icon from "./Icon"
 
 const layoutStyles = {
   backgroundColor: "#48BDBE",

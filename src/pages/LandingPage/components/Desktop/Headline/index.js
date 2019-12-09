@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 
-import Header from "../../../../components/Shared/SectionHeader"
 import Navbar from "./Navbar"
-import Paragraph from "../../../../components/Shared/Paragraph"
+import Header from "../../../shared/SectionHeader"
+import Paragraph from "../../../shared/Paragraph"
 import "./headline.css"
 
 const imgStyle = {
@@ -63,7 +63,7 @@ class Headline extends Component {
             alt="Profile of Jeremy Yip"
             className="noHighlight headline__profileImage"
             style={imgStyle}
-            src={require("../../../../Assets/webProfile.jpg")}
+            src={require("../../../../../Assets/webProfile.jpg")}
           />
           <h1
             className="headline__title"
@@ -94,7 +94,7 @@ class Headline extends Component {
               <img
                 alt=""
                 style={styles.chevron}
-                src={require("../../../../Assets/chevron.png")}
+                src={require("../../../../../Assets/chevron.png")}
               />
             </div>
           </div>

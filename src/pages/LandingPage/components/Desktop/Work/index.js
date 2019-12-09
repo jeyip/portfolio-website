@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 
-import { addDesktopLayout } from "../Utils/addLayout"
-import Header from "../Shared/SectionHeader"
-import WorkTile from "./WorkTile.jsx"
+import { addDesktopLayout } from "../../../utils/addLayout"
+import Header from "../../../shared/SectionHeader"
+import WorkTile from "./WorkTile"
 
 import "./workView.css"
 

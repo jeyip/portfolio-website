@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 
-import Header from "../Shared/SectionHeader"
-import Paragraph from "../Shared/Paragraph"
+import Header from "../../../shared/SectionHeader"
+import Paragraph from "../../../shared/Paragraph"
 
 const skillsText = `I believe deeply in the value of user-centric design.
 Technology is a tool, and delight is important, but the first priority of any
@@ -10,15 +10,11 @@ website or web app should be creating the most intuitive experience possible.`
 const skillData = [
   {
     title: "Coding",
-    imageUrl: "../../Assets/codeIcon.svg",
+    imageUrl: "../../../../../Assets/codeIcon.svg",
   },
   {
     title: "Story-Mapping",
-    imageUrl: "../../Assets/javascriptIcon.svg",
-  },
-  {
-    title: "UI/UX",
-    imageUrl: "../../Assets/javascriptIcon.svg",
+    imageUrl: "../../../../../Assets/javascriptIcon.svg",
   },
 ]
 
@@ -27,7 +23,7 @@ const SkillBox = ({ data }) => (
     <img
       alt="javascriptIcon"
       style={{ height: "200px", width: "auto" }}
-      src={require("../../Assets/codeIcon.svg")}
+      src={require("../../../../../Assets/codeIcon.svg")}
     />
     <h3>{data.title}</h3>
   </div>

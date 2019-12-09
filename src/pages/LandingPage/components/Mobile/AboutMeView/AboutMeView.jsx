@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 
-import { addMobileLayout } from "../../Utils/addLayout"
-import Header from "../../Shared/SectionHeader"
-import Paragraph from "../../Shared/Paragraph"
+import { addMobileLayout } from "../../../utils/addLayout"
+import Header from "../../../shared/SectionHeader"
+import Paragraph from "../../../shared/Paragraph"
 import SkillsSection from "./SkillsSection"
 
 import "./AboutMeView.css"

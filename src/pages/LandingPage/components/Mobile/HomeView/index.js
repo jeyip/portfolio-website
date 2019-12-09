@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 
-import Header from "../../Shared/SectionHeader"
 import Navbar from "./Navbar"
-import Paragraph from "../../Shared/Paragraph"
+import Header from "../../../shared/SectionHeader"
+import Paragraph from "../../../shared/Paragraph"
 import "./homeView.css"
 
 const imgStyle = {
@@ -56,7 +56,7 @@ class HomeView extends Component {
             alt="Profile of Jeremy Yip"
             className="noHighlight mobileHomeView__profileImage"
             style={imgStyle}
-            src={require("../../../Assets/webProfile.jpg")}
+            src={require("../../../../../Assets/webProfile.jpg")}
           />
           <h1 className="mobileHomeView__title" style={styles.title}>
             HI THERE,
