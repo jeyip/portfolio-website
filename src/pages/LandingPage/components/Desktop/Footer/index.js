@@ -18,21 +18,9 @@ class Footer extends Component {
           <div>{"(909) 726-3158"}</div>
           <div>jeremy.yip7@gmail.com</div>
         </div>
-        {/* <Icon
-          icon="github"
-          link="https://www.github.com/jeyip"
-          styles={styles}
-        />
-        <Icon
-          icon="linkedIn"
-          link="https://www.linkedin.com/in/jeremy-yip"
-          styles={styles}
-        />
-        <Icon
-          icon="medium"
-          link="https://medium.com/@jeremy.yip7"
-          styles={styles}
-        /> */}
+        <Icon icon="github" link="https://www.github.com/jeyip" />
+        <Icon icon="linkedIn" link="https://www.linkedin.com/in/jeremy-yip" />
+        <Icon icon="medium" link="https://medium.com/@jeremy.yip7" />
       </div>
     )
   }
@@ -51,7 +39,6 @@ Footer.defaultProps = {
       justifyContent: "center",
       flexDirection: "column",
     },
-    link: { margin: "0px 15px" },
   },
 }
 

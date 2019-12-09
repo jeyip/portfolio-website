@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import { addDesktopLayout } from "../../../utils/addLayout"
+import { addDesktopLayout } from "../../../../../utils/addLayout"
 import Header from "../../../shared/SectionHeader"
 import Paragraph from "../../../shared/Paragraph"
 import SkillsSection from "./SkillsSection"

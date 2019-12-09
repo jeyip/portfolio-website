@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import { addMobileLayout } from "../../../utils/addLayout"
+import { addMobileLayout } from "../../../../../utils/addLayout"
 import Header from "../../../shared/SectionHeader"
 import WorkTile from "./WorkTile.jsx"
 

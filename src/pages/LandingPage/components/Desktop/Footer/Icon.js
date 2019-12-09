@@ -8,8 +8,8 @@ const iconToClassMap = {
   medium: "fa fa-medium footer__mediumIcon",
 }
 
-const Icon = ({ icon, link, styles }) => (
-  <a href={link} style={styles.link}>
+const Icon = ({ icon, link }) => (
+  <a href={link} style={{ margin: "0px 15px" }}>
     <div
       className="footer__iconContainer"
       style={{
