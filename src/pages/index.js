@@ -5,7 +5,7 @@ import AboutMeView from "../components/AboutMeView/AboutMeView"
 import MobileAboutMeView from "../components/Mobile/AboutMeView/AboutMeView"
 import Footer from "../components/Footer/Footer"
 import MobileFooter from "../components/Mobile/Footer/Footer"
-import HomeView from "../components/HomeView/HomeView"
+import Headline from "./LandingPage/components/Headline"
 import MobileHomeView from "../components/Mobile/HomeView/HomeView"
 import WorkView from "../components/WorkView/WorkView"
 import MobileWorkView from "../components/Mobile/WorkView/WorkView"
@@ -16,7 +16,7 @@ class App extends Component {
       <div>
         <MediaQuery minDeviceWidth={481}>
           <div>
-            <HomeView />
+            <Headline />
             <WorkView />
             <AboutMeView />
             <Footer />

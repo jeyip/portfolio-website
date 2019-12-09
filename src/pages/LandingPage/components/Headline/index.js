@@ -1,10 +1,9 @@
 import React, { Component } from "react"
 
-import Header from "../Shared/SectionHeader"
+import Header from "../../../../components/Shared/SectionHeader"
 import Navbar from "./Navbar"
-import Paragraph from "../Shared/Paragraph"
-// import throttle from 'lodash.throttle';
-import "./homeView.css"
+import Paragraph from "../../../../components/Shared/Paragraph"
+import "./headline.css"
 
 const imgStyle = {
   maxHeight: "400px",
@@ -17,11 +16,10 @@ const introText = `After the Peace Corps, I cultivated a passion for computer sc
 I'm now a front-end software engineer aiming to combine my passions 
 of international development, human-centered design, and software engineering.`
 
-class HomeView extends Component {
+class Headline extends Component {
   constructor(props) {
     super()
     this.handleScrollTo = this.handleScrollTo.bind(this)
-    // this.handleAnimation = this.handleAnimation.bind(this);
   }
 
   handleScrollTo(className) {
@@ -30,21 +28,12 @@ class HomeView extends Component {
       .scrollIntoView({ behavior: "smooth", block: "start" })
   }
 
-  // handleAnimation() {
-  //   const wrapperDimensions = this.chevronWrapper.getBoundingClientRect();
-  //   const { width, height, left, top } = wrapperDimensions;
-
-  //   throttle(burst.tune({ x: (width / 2) + left, y: (height / 2) + top }).replay(), 2000, { leading: true });
-  // }
-
   render() {
     const { styles } = this.props
 
     return (
       <div
-        alignItems="center"
-        className="homeView__container"
-        flexDirection="column"
+        className="headline__container"
         style={{
           display: "flex",
           alignItems: "center",
@@ -52,7 +41,7 @@ class HomeView extends Component {
         }}
       >
         <div
-          className="homeView__header"
+          className="headline__header"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -72,29 +61,29 @@ class HomeView extends Component {
         >
           <img
             alt="Profile of Jeremy Yip"
-            className="noHighlight homeView__profileImage"
+            className="noHighlight headline__profileImage"
             style={imgStyle}
-            src={require("../../Assets/webProfile.jpg")}
+            src={require("../../../../Assets/webProfile.jpg")}
           />
           <h1
-            className="homeView__title"
+            className="headline__title"
             style={{ letterSpacing: "5px", marginBottom: "0px" }}
           >
             HI THERE,
           </h1>
           <Header
-            className="homeView__secondaryTitle"
+            className="headline__secondaryTitle"
             fontWeight={"300"}
             text="I'm Jeremy."
             style={styles.paragraphHeader}
           />
           <Paragraph
-            className="homeView__paragraph"
+            className="headline__paragraph"
             style={styles.paragraph}
             text={introText}
           />
           <div
-            className="homeView__workChevronWrapper"
+            className="headline__workChevronWrapper"
             onClick={() => this.handleScrollTo("workViewContainer")}
             onMouseEnter={this.handleAnimation}
             ref={ref => (this.chevronWrapper = ref)}
@@ -105,7 +94,7 @@ class HomeView extends Component {
               <img
                 alt=""
                 style={styles.chevron}
-                src={require("../../Assets/chevron.png")}
+                src={require("../../../../Assets/chevron.png")}
               />
             </div>
           </div>
@@ -115,7 +104,7 @@ class HomeView extends Component {
   }
 }
 
-HomeView.defaultProps = {
+Headline.defaultProps = {
   styles: {
     paragraph: {
       width: "25%",
@@ -146,4 +135,4 @@ HomeView.defaultProps = {
   },
 }
 
-export default HomeView
+export default Headline

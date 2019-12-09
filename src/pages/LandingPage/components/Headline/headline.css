@@ -1,0 +1,62 @@
+.headline__container {
+  min-height: 350px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.headline__header {
+  background: linear-gradient(45deg, #4ac29a, #37b9e9);
+  height: 45vh;
+  min-height: 300px;
+  width: 100vw;
+  padding-top: 75px;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.headline__profileImage {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.headline__title {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.headline__secondaryTitle {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.headline__paragraph {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.headline__workChevronWrapper {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
+  will-change: opacity;
+  overflow: visible;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
