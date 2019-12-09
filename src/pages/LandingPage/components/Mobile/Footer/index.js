@@ -1,10 +1,9 @@
 import React, { Component } from "react"
+import { FaGithubAlt, FaLinkedinIn, FaAngellist } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 
 import "./footer.css"
-
-const layoutStyles = {
-  backgroundColor: "#48BDBE",
-}
+import IconWithHover from "./Icon"
 
 class Footer extends Component {
   render() {
@@ -12,51 +11,27 @@ class Footer extends Component {
 
     return (
       <div style={styles.footer}>
-        <a href="https://www.github.com/jeyip" style={styles.link}>
-          <div
-            className="mobileFooter__iconContainer"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <i
-              className="fa fa-github-alt mobileFooter__githubIcon"
-              aria-hidden="true"
-            />
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/jeremy-yip" style={styles.link}>
-          <div
-            className="mobileFooter__iconContainer"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <i
-              className="fa fa-linkedin mobileFooter__linkedinIcon"
-              aria-hidden="true"
-            />
-          </div>
-        </a>
-        <a href="https://medium.com/@jeremy.yip7" style={styles.link}>
-          <div
-            className="mobileFooter__iconContainer"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <i
-              className="fa fa-medium mobileFooter__mediumIcon"
-              aria-hidden="true"
-            />
-          </div>
-        </a>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100%",
+          }}
+        >
+          <IconWithHover link="https://www.github.com/jeyip">
+            <FaGithubAlt size="1.5em" />
+          </IconWithHover>
+          <IconWithHover link="https://www.linkedin.com/in/jeremy-yip">
+            <FaLinkedinIn size="1.5em" />
+          </IconWithHover>
+          <IconWithHover link="mailto:jeremy.yip7@gmail.com">
+            <MdEmail size="1.5em" />
+          </IconWithHover>
+          <IconWithHover link="https://angel.co/jeremy-yip">
+            <FaAngellist size="1.5em" />
+          </IconWithHover>
+        </div>
       </div>
     )
   }
@@ -64,15 +39,12 @@ class Footer extends Component {
 
 Footer.defaultProps = {
   styles: {
-    header: { color: "#FFF", fontSize: "18px" },
-    paragraph: { color: "#FFF" },
     footer: {
       alignItems: "center",
       justifyContent: "center",
       backgroundColor: "#48BDBE",
       height: "10vh",
     },
-    link: { margin: "0px 15px" },
   },
 }
 

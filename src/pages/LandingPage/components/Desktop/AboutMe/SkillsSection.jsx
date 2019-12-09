@@ -10,15 +10,15 @@ website or web app should be creating the most intuitive experience possible.`
 const skillData = [
   {
     title: "Coding",
-    imageUrl: "../../../../../Assets/codeIcon.svg",
+    imageUrl: "@/Assets/codeIcon.svg",
   },
   {
     title: "Story-Mapping",
-    imageUrl: "../../../../../Assets/javascriptIcon.svg",
+    imageUrl: "@/Assets/javascriptIcon.svg",
   },
   {
     title: "UI/UX",
-    imageUrl: "../../../../../Assets/javascriptIcon.svg",
+    imageUrl: "@/Assets/javascriptIcon.svg",
   },
 ]
 
@@ -27,7 +27,7 @@ const SkillBox = ({ data }) => (
     <img
       alt="javascriptIcon"
       style={{ height: "200px", width: "auto" }}
-      src={require("../../../../../Assets/codeIcon.svg")}
+      src={require("@/Assets/codeIcon.svg")}
     />
     <h3>{data.title}</h3>
   </div>

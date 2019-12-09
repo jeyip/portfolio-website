@@ -2,24 +2,23 @@ import React, { Component } from "react"
 
 import Header from "../../../shared/SectionHeader"
 import Paragraph from "../../../shared/Paragraph"
-import "./homeView.css"
+import "./headline.css"
 
 const imgStyle = {
   maxHeight: "230px",
   minHeight: "230px",
-  alignSelf: "center",
   borderRadius: "50%",
+  position: "absolute",
+  bottom: "-125px",
+  left: "50%",
+  marginLeft: "-115px",
 }
 
 const introText = `After the Peace Corps, I cultivated a passion for computer science.
 I'm now a front-end software engineer aiming to combine my passions
 of international development, human-centered design, and software engineering.`
 
-class HomeView extends Component {
-  constructor(props) {
-    super()
-  }
-
+class Headline extends Component {
   render() {
     const { styles } = this.props
 
@@ -40,23 +39,21 @@ class HomeView extends Component {
             justifyContent: "flex-start",
           }}
         >
-          &nbsp;
+          <img
+            alt="Profile of Jeremy Yip"
+            className="noHighlight mobileHomeView__profileImage"
+            style={imgStyle}
+            src={require("@/Assets/webProfile.jpg")}
+          />
         </div>
         <div
           style={{
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
-            position: "relative",
-            bottom: "125px",
+            paddingTop: "300px",
           }}
         >
-          <img
-            alt="Profile of Jeremy Yip"
-            className="noHighlight mobileHomeView__profileImage"
-            style={imgStyle}
-            src={require("../../../../../Assets/webProfile.jpg")}
-          />
           <h1 className="mobileHomeView__title" style={styles.title}>
             HI THERE,
           </h1>
@@ -77,7 +74,7 @@ class HomeView extends Component {
   }
 }
 
-HomeView.defaultProps = {
+Headline.defaultProps = {
   styles: {
     paragraph: {
       width: "25%",
@@ -103,4 +100,4 @@ HomeView.defaultProps = {
   },
 }
 
-export default HomeView
+export default Headline

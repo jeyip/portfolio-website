@@ -1,62 +1,47 @@
-.headline__container {
+.mobileHomeView__container {
   min-height: 350px;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
-.headline__header {
+.mobileHomeView__header {
   background: linear-gradient(45deg, #4ac29a, #37b9e9);
-  height: 40vh;
-  min-height: 300px;
+  height: 30vh;
+  min-height: 75px;
   width: 100vw;
-  padding-top: 75px;
   animation: fadeIn 1.5s forwards;
   animation-delay: 0.3s;
   opacity: 0;
   will-change: opacity;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: "relative";
+  position: relative;
 }
 
-.headline__profileImage {
+.mobileHomeView__profileImage {
   animation: fadeIn 1.5s forwards;
   animation-delay: 0.3s;
   opacity: 0;
   will-change: opacity;
 }
 
-.headline__title {
+.mobileHomeView__title {
   animation: fadeIn 1.5s forwards;
   animation-delay: 0.9s;
   opacity: 0;
   will-change: opacity;
 }
 
-.headline__secondaryTitle {
+.mobileHomeView__secondaryTitle {
   animation: fadeIn 1.5s forwards;
   animation-delay: 0.9s;
   opacity: 0;
   will-change: opacity;
 }
 
-.headline__paragraph {
+.mobileHomeView__paragraph {
   animation: fadeIn 1.5s forwards;
   animation-delay: 1.3s;
   opacity: 0;
   will-change: opacity;
-}
-
-.headline__workChevronWrapper {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 1.3s;
-  opacity: 0;
-  will-change: opacity;
-  overflow: visible;
 }
 
 @keyframes fadeIn {

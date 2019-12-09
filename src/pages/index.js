@@ -7,7 +7,7 @@ import Headline from "./LandingPage/components/Desktop/Headline"
 import Work from "./LandingPage/components/Desktop/Work"
 import MobileAboutMeView from "./LandingPage/components/Mobile/AboutMeView"
 import MobileFooter from "./LandingPage/components/Mobile/Footer"
-import MobileHomeView from "./LandingPage/components/Mobile/HomeView"
+import MobileHeadline from "./LandingPage/components/Mobile/Headline"
 import MobileWorkView from "./LandingPage/components/Mobile/WorkView"
 
 const DesktopView = () => (
@@ -21,7 +21,7 @@ const DesktopView = () => (
 
 const MobileView = () => (
   <div>
-    <MobileHomeView />
+    <MobileHeadline />
     <MobileWorkView />
     {/* <MobileAboutMeView /> */}
     <MobileFooter />

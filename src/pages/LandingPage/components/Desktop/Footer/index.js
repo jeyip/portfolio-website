@@ -5,6 +5,7 @@ import SectionHeader from "@/pages/LandingPage/shared/SectionHeader"
 
 import "./footer.css"
 import IconWithHover from "./Icon"
+
 class Footer extends Component {
   render() {
     const { styles } = this.props

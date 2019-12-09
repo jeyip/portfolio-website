@@ -6,10 +6,11 @@ import Paragraph from "../../../shared/Paragraph"
 import "./headline.css"
 
 const imgStyle = {
-  maxHeight: "400px",
-  minHeight: "400px",
+  maxHeight: "375px",
+  minHeight: "375px",
   alignSelf: "center",
   borderRadius: "50%",
+  position: "relative",
 }
 
 const introText = `After the Peace Corps, I cultivated a passion for computer science. 
@@ -32,39 +33,25 @@ class Headline extends Component {
     const { styles } = this.props
 
     return (
-      <div
-        className="headline__container"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <div
-          className="headline__header"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-          }}
-        >
+      <div className="headline__container">
+        <div className="headline__header">
           <Navbar />
+          <img
+            alt="Profile of Jeremy Yip"
+            className="noHighlight headline__profileImage"
+            style={imgStyle}
+            src={require("@/Assets/webProfile.jpg")}
+          />
         </div>
         <div
           style={{
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
-            position: "relative",
-            bottom: "220px",
+            height: "60vh",
+            paddingTop: "12%",
           }}
         >
-          <img
-            alt="Profile of Jeremy Yip"
-            className="noHighlight headline__profileImage"
-            style={imgStyle}
-            src={require("../../../../../Assets/webProfile.jpg")}
-          />
           <h1
             className="headline__title"
             style={{ letterSpacing: "5px", marginBottom: "0px" }}
@@ -94,7 +81,7 @@ class Headline extends Component {
               <img
                 alt=""
                 style={styles.chevron}
-                src={require("../../../../../Assets/chevron.png")}
+                src={require("@/Assets/chevron.png")}
               />
             </div>
           </div>
