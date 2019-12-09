@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import Flexbox from "flexbox-react"
 
 import Header from "../Shared/SectionHeader"
 import Navbar from "./Navbar"
@@ -42,22 +41,34 @@ class HomeView extends Component {
     const { styles } = this.props
 
     return (
-      <Flexbox
+      <div
         alignItems="center"
         className="homeView__container"
         flexDirection="column"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
       >
-        <Flexbox
+        <div
           className="homeView__header"
-          flexDirection="column"
-          justifyContent="flex-start"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+          }}
         >
           <Navbar />
-        </Flexbox>
-        <Flexbox
-          alignItems="center"
-          flexDirection="column"
-          style={{ position: "relative", bottom: "220px" }}
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            position: "relative",
+            bottom: "220px",
+          }}
         >
           <img
             alt="Profile of Jeremy Yip"
@@ -98,8 +109,8 @@ class HomeView extends Component {
               />
             </div>
           </div>
-        </Flexbox>
-      </Flexbox>
+        </div>
+      </div>
     )
   }
 }

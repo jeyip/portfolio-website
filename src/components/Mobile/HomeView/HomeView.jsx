@@ -1,10 +1,8 @@
 import React, { Component } from "react"
-import Flexbox from "flexbox-react"
 
 import Header from "../../Shared/SectionHeader"
 import Navbar from "./Navbar"
 import Paragraph from "../../Shared/Paragraph"
-import throttle from "lodash.throttle"
 import "./homeView.css"
 
 const imgStyle = {
@@ -21,36 +19,38 @@ of international development, human-centered design, and software engineering.`
 class HomeView extends Component {
   constructor(props) {
     super()
-    // this.handleAnimation = this.handleAnimation.bind(this);
   }
-
-  // handleAnimation() {
-  //   const wrapperDimensions = this.chevronWrapper.getBoundingClientRect();
-  //   const { width, height, left, top } = wrapperDimensions;
-
-  //   throttle(burst.tune({ x: (width / 2) + left, y: (height / 2) + top }).replay(), 2000, { leading: true });
-  // }
 
   render() {
     const { styles } = this.props
 
     return (
-      <Flexbox
-        alignItems="center"
+      <div
         className="mobileHomeView__container"
-        flexDirection="column"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        <Flexbox
+        <div
           className="mobileHomeView__header"
-          flexDirection="column"
-          justifyContent="flex-start"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+          }}
         >
           &nbsp;
-        </Flexbox>
-        <Flexbox
-          alignItems="center"
-          flexDirection="column"
-          style={{ position: "relative", bottom: "125px" }}
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            position: "relative",
+            bottom: "125px",
+          }}
         >
           <img
             alt="Profile of Jeremy Yip"
@@ -72,10 +72,10 @@ class HomeView extends Component {
             style={styles.paragraph}
             text={introText}
           />
-        </Flexbox>
+        </div>
         {/* TODO: Re-evaluate the need for a navbar */}
         {/* <Navbar /> */}
-      </Flexbox>
+      </div>
     )
   }
 }

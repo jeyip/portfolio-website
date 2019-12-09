@@ -1,27 +1,26 @@
-import React from 'react';
-import Flexbox from 'flexbox-react';
+import React from "react"
 
-import './footer.css';
+import "./footer.css"
 
 const iconToClassMap = {
-  github: 'fa fa-github-alt footer__githubIcon',
-  linkedIn: 'fa fa-linkedin footer__linkedinIcon',
-  medium: 'fa fa-medium footer__mediumIcon',
+  github: "fa fa-github-alt footer__githubIcon",
+  linkedIn: "fa fa-linkedin footer__linkedinIcon",
+  medium: "fa fa-medium footer__mediumIcon",
 }
 
 const Icon = ({ icon, link, styles }) => (
   <a href={link} style={styles.link}>
-    <Flexbox
-      alignItems="center"
+    <div
       className="footer__iconContainer"
-      justifyContent="center"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
-      <i
-        className={iconToClassMap[icon]}
-        aria-hidden="true"
-      />
-    </Flexbox>
+      <i className={iconToClassMap[icon]} aria-hidden="true" />
+    </div>
   </a>
 )
 
-export default Icon;
+export default Icon

@@ -1,73 +1,79 @@
-import React, { Component } from 'react';
-import Flexbox from 'flexbox-react';
+import React, { Component } from "react"
 
-import './footer.css';
+import "./footer.css"
 
 const layoutStyles = {
-  backgroundColor: '#48BDBE',
-};
+  backgroundColor: "#48BDBE",
+}
 
 class Footer extends Component {
   render() {
-    const { styles } = this.props;
+    const { styles } = this.props
 
     return (
-      <Flexbox
-        alignItems="center"
-        justifyContent="center"
-        style={styles.footer}
-      >
+      <div style={styles.footer}>
         <a href="https://www.github.com/jeyip" style={styles.link}>
-          <Flexbox
-            alignItems="center"
+          <div
             className="mobileFooter__iconContainer"
-            justifyContent="center"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             <i
               className="fa fa-github-alt mobileFooter__githubIcon"
               aria-hidden="true"
             />
-          </Flexbox>
+          </div>
         </a>
         <a href="https://www.linkedin.com/in/jeremy-yip" style={styles.link}>
-          <Flexbox
-            alignItems="center"
+          <div
             className="mobileFooter__iconContainer"
-            justifyContent="center"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             <i
               className="fa fa-linkedin mobileFooter__linkedinIcon"
               aria-hidden="true"
             />
-          </Flexbox>
+          </div>
         </a>
         <a href="https://medium.com/@jeremy.yip7" style={styles.link}>
-          <Flexbox
-            alignItems="center"
+          <div
             className="mobileFooter__iconContainer"
-            justifyContent="center"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             <i
               className="fa fa-medium mobileFooter__mediumIcon"
               aria-hidden="true"
             />
-          </Flexbox>
+          </div>
         </a>
-      </Flexbox>
-    );
+      </div>
+    )
   }
 }
 
 Footer.defaultProps = {
   styles: {
-    header: { color: '#FFF', fontSize: '18px' },
-    paragraph: { color: '#FFF' },
+    header: { color: "#FFF", fontSize: "18px" },
+    paragraph: { color: "#FFF" },
     footer: {
-      backgroundColor: '#48BDBE',
-      height: '10vh'
+      alignItems: "center",
+      justifyContent: "center",
+      backgroundColor: "#48BDBE",
+      height: "10vh",
     },
-    link: { margin: '0px 15px' }
-  }
+    link: { margin: "0px 15px" },
+  },
 }
 
-export default Footer;
+export default Footer

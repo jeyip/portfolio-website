@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import Flexbox from "flexbox-react"
 
 import "./footer.css"
 import Icon from "./Icon.jsx"
