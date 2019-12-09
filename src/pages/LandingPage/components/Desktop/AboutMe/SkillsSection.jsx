@@ -44,7 +44,9 @@ class SkillsSection extends Component {
           width: "50%",
         }}
       >
-        <Header text="MY SKILLS" />
+        <div style={{ marginBottom: "30px" }}>
+          <Header text="MY SKILLS" />
+        </div>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           {skillData.map(data => (
             <SkillBox data={data} key={`${data.title}-${data.imageUrl}`} />

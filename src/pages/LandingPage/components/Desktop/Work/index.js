@@ -22,21 +22,6 @@ const workData = [
     imageUrl: "",
     id: 3,
   },
-  {
-    title: "Placeholder",
-    imageUrl: "",
-    id: 4,
-  },
-  {
-    title: "Placeholder",
-    imageUrl: "",
-    id: 5,
-  },
-  {
-    title: "Placeholder",
-    imageUrl: "",
-    id: 6,
-  },
 ]
 
 class WorkView extends Component {
@@ -50,7 +35,9 @@ class WorkView extends Component {
           justifyContent: "center",
         }}
       >
-        <Header text="WORK" />
+        <div style={{ marginBottom: "30px" }}>
+          <Header text="WORK" />
+        </div>
         <div
           style={{
             display: "flex",

@@ -15,7 +15,9 @@ class AboutMe extends Component {
     return (
       <div className="aboutMe" style={{ display: "flex" }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <Header text="ABOUT ME" />
+          <div style={{ marginBottom: "30px" }}>
+            <Header text="ABOUT ME" />
+          </div>
           <Paragraph text={aboutMeText} style={{ width: "50%" }} />
           <SkillsSection />
         </div>
