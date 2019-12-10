@@ -52,14 +52,14 @@ class Headline extends Component {
             alignItems: "center",
             flexDirection: "column",
             justifyContent: "center",
-            height: "70vh",
+            marginTop: "150px",
           }}
         >
           <h1
             className={styles.title}
             style={{ letterSpacing: "5px", marginBottom: "0px" }}
           >
-            HI THERE,
+            {"HI THERE,"}
           </h1>
           <Header
             className={styles.secondaryTitle}
@@ -79,7 +79,19 @@ class Headline extends Component {
             ref={ref => (this.chevronWrapper = ref)}
             style={stylesProps.chevronContainer}
           >
-            <Header style={stylesProps.chevronHeader} text="WORK" />
+            <div
+              style={{
+                fontFamily: "Dosis, sans-serif",
+                cursor: "pointer",
+                marginBottom: "5px",
+                textAlign: "center",
+                fontSize: "25px",
+                fontWeight: "bold",
+                letterSpacing: "5px",
+              }}
+            >
+              {"WORK"}
+            </div>
             <div>
               <img
                 alt=""
@@ -100,7 +112,7 @@ Headline.defaultProps = {
       width: "25%",
       minWidth: "570px",
       textAlign: "left",
-      marginTop: "15px",
+      marginTop: "40px",
     },
     paragraphHeader: {
       letterSpacing: "1px",
