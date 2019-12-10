@@ -1,13 +1,13 @@
-.headline__container {
+.container {
   min-height: 350px;
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
-.headline__header {
+.header {
   background: linear-gradient(45deg, #4ac29a, #37b9e9);
   height: 40vh;
   min-height: 300px;
@@ -20,38 +20,38 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: "relative";
+  position: relative;
 }
 
-.headline__profileImage {
+.profileImage {
   animation: fadeIn 1.5s forwards;
   animation-delay: 0.3s;
   opacity: 0;
   will-change: opacity;
 }
 
-.headline__title {
+.title {
   animation: fadeIn 1.5s forwards;
   animation-delay: 0.9s;
   opacity: 0;
   will-change: opacity;
 }
 
-.headline__secondaryTitle {
+.secondaryTitle {
   animation: fadeIn 1.5s forwards;
   animation-delay: 0.9s;
   opacity: 0;
   will-change: opacity;
 }
 
-.headline__paragraph {
+.paragraph {
   animation: fadeIn 1.5s forwards;
   animation-delay: 1.3s;
   opacity: 0;
   will-change: opacity;
 }
 
-.headline__workChevronWrapper {
+.workChevronWrapper {
   animation: fadeIn 1.5s forwards;
   animation-delay: 1.3s;
   opacity: 0;

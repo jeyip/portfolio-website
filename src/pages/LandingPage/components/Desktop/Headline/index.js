@@ -3,14 +3,17 @@ import React, { Component } from "react"
 import Navbar from "./Navbar"
 import Header from "../../../shared/SectionHeader"
 import Paragraph from "../../../shared/Paragraph"
-import "./headline.css"
+import styles from "./headline.module.css"
 
 const imgStyle = {
   maxHeight: "375px",
   minHeight: "375px",
   alignSelf: "center",
   borderRadius: "50%",
-  position: "relative",
+  position: "absolute",
+  bottom: "-200px",
+  left: "50%",
+  marginLeft: "-187.5px",
 }
 
 const introText = `After the Peace Corps, I cultivated a passion for computer science. 
@@ -30,15 +33,15 @@ class Headline extends Component {
   }
 
   render() {
-    const { styles } = this.props
+    const { stylesProps } = this.props
 
     return (
-      <div className="headline__container">
-        <div className="headline__header">
+      <div className={styles.container}>
+        <div className={styles.header}>
           <Navbar />
           <img
             alt="Profile of Jeremy Yip"
-            className="noHighlight headline__profileImage"
+            className={`noHighlight ${styles.profileImage}`}
             style={imgStyle}
             src={require("@/Assets/webProfile.jpg")}
           />
@@ -48,35 +51,35 @@ class Headline extends Component {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
+            justifyContent: "center",
             height: "60vh",
-            paddingTop: "12%",
           }}
         >
           <h1
-            className="headline__title"
+            className={styles.title}
             style={{ letterSpacing: "5px", marginBottom: "0px" }}
           >
             HI THERE,
           </h1>
           <Header
-            className="headline__secondaryTitle"
+            className={styles.secondaryTitle}
             fontWeight={"300"}
             text="I'm Jeremy."
-            style={styles.paragraphHeader}
+            style={stylesProps.paragraphHeader}
           />
           <Paragraph
-            className="headline__paragraph"
-            style={styles.paragraph}
+            className={styles.paragraph}
+            style={stylesProps.paragraph}
             text={introText}
           />
           <div
-            className="headline__workChevronWrapper"
+            className={styles.workChevronWrapper}
             onClick={() => this.handleScrollTo("workViewContainer")}
             onMouseEnter={this.handleAnimation}
             ref={ref => (this.chevronWrapper = ref)}
-            style={styles.chevronContainer}
+            style={stylesProps.chevronContainer}
           >
-            <Header style={styles.chevronHeader} text="WORK" />
+            <Header style={stylesProps.chevronHeader} text="WORK" />
             <div>
               <img
                 alt=""
@@ -92,7 +95,7 @@ class Headline extends Component {
 }
 
 Headline.defaultProps = {
-  styles: {
+  stylesProps: {
     paragraph: {
       width: "25%",
       minWidth: "570px",

@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import Header from "../../../shared/SectionHeader"
 import Paragraph from "../../../shared/Paragraph"
-import "./headline.css"
+import styles from "./headline.module.css"
 
 const imgStyle = {
   maxHeight: "230px",
@@ -20,14 +20,14 @@ of international development, human-centered design, and software engineering.`
 
 class Headline extends Component {
   render() {
-    const { styles } = this.props
+    const { stylesProps } = this.props
 
     return (
-      <div className="headline__container">
-        <div className="headline__header">
+      <div className={styles.container}>
+        <div className={styles.header}>
           <img
             alt="Profile of Jeremy Yip"
-            className="noHighlight headline__profileImage"
+            className={`noHighlight ${styles.profileImage}`}
             style={imgStyle}
             src={require("@/Assets/webProfile.jpg")}
           />
@@ -42,18 +42,18 @@ class Headline extends Component {
             marginTop: "40px",
           }}
         >
-          <h1 className="headline__title" style={styles.title}>
+          <h1 className={styles.title} style={stylesProps.title}>
             HI THERE,
           </h1>
           <Header
-            className="headline__secondaryTitle"
+            className={styles.secondaryTitle}
             fontWeight={"300"}
             text="I'm Jeremy."
-            style={styles.paragraphHeader}
+            style={stylesProps.paragraphHeader}
           />
           <Paragraph
-            className="headline__paragraph"
-            style={styles.paragraph}
+            className={styles.paragraph}
+            style={stylesProps.paragraph}
             text={introText}
           />
         </div>
@@ -63,7 +63,7 @@ class Headline extends Component {
 }
 
 Headline.defaultProps = {
-  styles: {
+  stylesProps: {
     paragraph: {
       width: "25%",
       minWidth: "275px",
