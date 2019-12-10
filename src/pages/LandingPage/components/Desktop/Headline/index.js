@@ -6,14 +6,14 @@ import Paragraph from "../../../shared/Paragraph"
 import styles from "./headline.module.css"
 
 const imgStyle = {
-  maxHeight: "375px",
-  minHeight: "375px",
+  maxHeight: "325px",
+  minHeight: "325px",
   alignSelf: "center",
   borderRadius: "50%",
   position: "absolute",
-  bottom: "-200px",
+  bottom: "-150px",
   left: "50%",
-  marginLeft: "-187.5px",
+  marginLeft: "-162.5px",
 }
 
 const introText = `After the Peace Corps, I cultivated a passion for computer science. 
@@ -52,7 +52,7 @@ class Headline extends Component {
             alignItems: "center",
             flexDirection: "column",
             justifyContent: "center",
-            height: "60vh",
+            height: "70vh",
           }}
         >
           <h1
@@ -83,7 +83,7 @@ class Headline extends Component {
             <div>
               <img
                 alt=""
-                style={styles.chevron}
+                style={stylesProps.chevron}
                 src={require("@/Assets/chevron.png")}
               />
             </div>
