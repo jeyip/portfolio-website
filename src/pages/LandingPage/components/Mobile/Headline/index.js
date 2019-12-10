@@ -23,25 +23,11 @@ class Headline extends Component {
     const { styles } = this.props
 
     return (
-      <div
-        className="mobileHomeView__container"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <div
-          className="mobileHomeView__header"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-          }}
-        >
+      <div className="headline__container">
+        <div className="headline__header">
           <img
             alt="Profile of Jeremy Yip"
-            className="noHighlight mobileHomeView__profileImage"
+            className="noHighlight headline__profileImage"
             style={imgStyle}
             src={require("@/Assets/webProfile.jpg")}
           />
@@ -56,17 +42,17 @@ class Headline extends Component {
             marginTop: "40px",
           }}
         >
-          <h1 className="mobileHomeView__title" style={styles.title}>
+          <h1 className="headline__title" style={styles.title}>
             HI THERE,
           </h1>
           <Header
-            className="mobileHomeView__secondaryTitle"
+            className="headline__secondaryTitle"
             fontWeight={"300"}
             text="I'm Jeremy."
             style={styles.paragraphHeader}
           />
           <Paragraph
-            className="mobileHomeView__paragraph"
+            className="headline__paragraph"
             style={styles.paragraph}
             text={introText}
           />
