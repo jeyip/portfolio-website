@@ -51,7 +51,9 @@ class Headline extends Component {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
-            paddingTop: "300px",
+            justifyContent: "center",
+            height: "70vh",
+            marginTop: "40px",
           }}
         >
           <h1 className="mobileHomeView__title" style={styles.title}>
