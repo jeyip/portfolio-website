@@ -55,10 +55,6 @@ a:visited {
   text-decoration: none;
 }
 
-.navbar:hover {
-  background-color: white;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
