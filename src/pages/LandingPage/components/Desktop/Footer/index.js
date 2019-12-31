@@ -11,7 +11,7 @@ class Footer extends Component {
     const { styles } = this.props
 
     return (
-      <div style={styles.footer}>
+      <div className="footer" style={styles.footer}>
         <div style={{ paddingTop: "35px", paddingBottom: "30px" }}>
           <SectionHeader text="CONTACT ME" style={{ color: "#FFF" }} />
         </div>

@@ -40,14 +40,17 @@ class Navbar extends Component {
           >
             Work
           </li>
-          <li
+          {/* <li
             className="navbar__item noHighlight"
             onClick={() => this.handleScrollTo("aboutMeView")}
           >
             About
-          </li>
-          <li className="navbar__item noHighlight">
-            <a href="contact.html">Contact</a>
+          </li> */}
+          <li
+            className="navbar__item noHighlight"
+            onClick={() => this.handleScrollTo("footer")}
+          >
+            Contact
           </li>
         </ul>
       </div>

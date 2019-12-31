@@ -1,15 +1,15 @@
 a:link {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
 a:visited {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
 .navbar {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   display: flex;
   justify-content: space-around;
@@ -17,7 +17,7 @@ a:visited {
   margin: 0px;
   padding-right: 5vw;
   padding-left: 0px;
-  width: 450px;
+  width: 350px;
 }
 
 .navbar__item {
@@ -34,7 +34,7 @@ a:visited {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: #fff;
   /* visibility: hidden; */
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -44,7 +44,7 @@ a:visited {
 
 .navbar__item:hover:before {
   visibility: visible;
-  animation: fadeIn .3s forwards;
+  animation: fadeIn 0.3s forwards;
 }
 
 .navbar:link {
@@ -56,10 +56,16 @@ a:visited {
 }
 
 .navbar:hover {
-  background-color: white,
+  background-color: white;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: scaleX(0) }
-  to { opacity: 1; transform: scaleX(1); }
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
 }
