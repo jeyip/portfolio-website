@@ -16,8 +16,8 @@ const imgStyle = {
   marginLeft: "-162.5px",
 }
 
-const introText = `After the Peace Corps, I cultivated a passion for computer science. 
-I'm now a front-end software engineer aiming to combine my passions 
+const introText = `After the Peace Corps, I cultivated a passion for computer science.
+I'm now a front-end software engineer aiming to combine my passions
 of international development, human-centered design, and software engineering.`
 
 class Headline extends Component {
@@ -43,7 +43,7 @@ class Headline extends Component {
             alt="Profile of Jeremy Yip"
             className={`noHighlight ${styles.profileImage}`}
             style={imgStyle}
-            src={require("@/Assets/webProfile.jpg")}
+            src={require("@/assets/webProfile.jpg")}
           />
         </div>
         <div
@@ -96,7 +96,7 @@ class Headline extends Component {
               <img
                 alt=""
                 style={stylesProps.chevron}
-                src={require("@/Assets/chevron.png")}
+                src={require("@/assets/chevron.png")}
               />
             </div>
           </div>

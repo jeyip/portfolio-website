@@ -29,7 +29,7 @@ class Headline extends Component {
             alt="Profile of Jeremy Yip"
             className={`noHighlight ${styles.profileImage}`}
             style={imgStyle}
-            src={require("@/Assets/webProfile.jpg")}
+            src={require("@/assets/webProfile.jpg")}
           />
         </div>
         <div
