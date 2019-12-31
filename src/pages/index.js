@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import MediaQuery from "react-responsive"
 
 import AboutMe from "./LandingPage/components/Desktop/AboutMe"
@@ -14,7 +14,7 @@ const DesktopView = () => (
   <div>
     <Headline />
     <Work />
-    <AboutMe />
+    {/* <AboutMe /> */}
     <Footer />
   </div>
 )
@@ -28,19 +28,17 @@ const MobileView = () => (
   </div>
 )
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <MediaQuery minDeviceWidth={481}>
-          <DesktopView />
-        </MediaQuery>
-        <MediaQuery minDeviceWidth={320} maxDeviceWidth={480}>
-          <MobileView />
-        </MediaQuery>
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div>
+      <MediaQuery minDeviceWidth={481}>
+        <DesktopView />
+      </MediaQuery>
+      <MediaQuery minDeviceWidth={320} maxDeviceWidth={480}>
+        <MobileView />
+      </MediaQuery>
+    </div>
+  )
 }
 
 export default App
