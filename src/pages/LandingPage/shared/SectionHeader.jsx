@@ -1,13 +1,11 @@
 import React from "react"
+import cx from "classnames"
 
-const Header = ({ className, fontWeight, text, style }) => {
-  const defaultStyles = {
-    fontFamily: "Dosis, sans-serif",
-    letterSpacing: "5px",
-  }
+import styles from "./sectionHeader.module.css"
 
+const Header = ({ className = "", fontWeight, text, style }) => {
   return (
-    <div className={className} style={{ ...defaultStyles, ...style }}>
+    <div className={cx(styles.headerWrapper, className)} style={{ ...style }}>
       <h2
         style={{ fontFamily: "Dosis, sans-serif", fontWeight, margin: "0px" }}
       >
@@ -15,10 +13,6 @@ const Header = ({ className, fontWeight, text, style }) => {
       </h2>
     </div>
   )
-}
-
-Header.defaultProps = {
-  className: "",
 }
 
 export default Header
