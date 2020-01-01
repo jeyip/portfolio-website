@@ -13,8 +13,6 @@
   min-height: 300px;
   width: 100vw;
   padding-top: 75px;
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 0.3s;
   opacity: 0;
   will-change: opacity;
   display: flex;
@@ -24,39 +22,44 @@
 }
 
 .profileImage {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 0.3s;
   opacity: 0;
   will-change: opacity;
 }
 
 .title {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 0.9s;
   opacity: 0;
   will-change: opacity;
 }
 
 .secondaryTitle {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 0.9s;
   opacity: 0;
   will-change: opacity;
 }
 
 .paragraph {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 1.3s;
   opacity: 0;
   will-change: opacity;
 }
 
 .workChevronWrapper {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 1.3s;
   opacity: 0;
   will-change: opacity;
   overflow: visible;
+}
+
+.fadeIn3 {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.3s;
+}
+
+.fadeIn9 {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.9s;
+}
+
+.fadeIn13 {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1.3s;
 }
 
 @keyframes fadeIn {

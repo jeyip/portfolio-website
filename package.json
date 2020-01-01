@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "classnames": "2.2.6",
     "gatsby": "2.18.7",
     "gatsby-image": "2.2.34",
     "gatsby-plugin-manifest": "2.2.31",
@@ -17,8 +18,9 @@
     "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-icons": "3.8.0",
     "react-helmet": "5.2.1",
+    "react-icons": "3.8.0",
+    "react-loader-spinner": "3.1.5",
     "react-responsive": "8.0.1",
     "typeface-dosis": "0.0.72",
     "typeface-open-sans": "0.0.75"

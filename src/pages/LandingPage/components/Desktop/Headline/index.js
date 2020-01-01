@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import cx from "classnames"
 
 import Navbar from "./Navbar"
 import Header from "../../../shared/SectionHeader"
@@ -33,17 +34,23 @@ class Headline extends Component {
   }
 
   render() {
-    const { stylesProps } = this.props
-
+    const { isLoading, setLoading, stylesProps } = this.props
     return (
       <div className={styles.container}>
-        <div className={styles.header}>
+        <div className={cx(styles.header, { [styles.fadeIn3]: !isLoading })}>
           <Navbar />
           <img
             alt="Profile of Jeremy Yip"
-            className={`noHighlight ${styles.profileImage}`}
+            className={cx("noHighlight", styles.profileImage, {
+              [styles.fadeIn3]: !isLoading,
+            })}
             style={imgStyle}
             src={require("@/images/webProfile.jpg")}
+            onLoad={() => {
+              setTimeout(() => {
+                setLoading(false)
+              }, 1000)
+            }}
           />
         </div>
         <div
@@ -56,24 +63,30 @@ class Headline extends Component {
           }}
         >
           <h1
-            className={styles.title}
+            className={cx(styles.title, { [styles.fadeIn9]: !isLoading })}
             style={{ letterSpacing: "5px", marginBottom: "0px" }}
           >
             {"HI THERE,"}
           </h1>
           <Header
-            className={styles.secondaryTitle}
+            className={cx(styles.secondaryTitle, {
+              [styles.fadeIn9]: !isLoading,
+            })}
             fontWeight={"300"}
             text="I'm Jeremy."
             style={stylesProps.paragraphHeader}
           />
           <Paragraph
-            className={styles.paragraph}
+            className={cx(styles.paragraph, {
+              [styles.fadeIn13]: !isLoading,
+            })}
             style={stylesProps.paragraph}
             text={introText}
           />
           <div
-            className={styles.workChevronWrapper}
+            className={cx(styles.workChevronWrapper, {
+              [styles.fadeIn13]: !isLoading,
+            })}
             onClick={() => this.handleScrollTo("workViewContainer")}
             onMouseEnter={this.handleAnimation}
             ref={ref => (this.chevronWrapper = ref)}
