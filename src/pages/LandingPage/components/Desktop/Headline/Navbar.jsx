@@ -29,7 +29,7 @@ class Navbar extends Component {
             alt="Logo for Jeremy Yip"
             className="noHighlight"
             style={{ maxWidth: "30%" }}
-            src={require("@/images/logoWhite.svg")}
+            src={require("@/images/logo-icon-white.svg")}
           />
         </div>
         <ul className="navbar">
