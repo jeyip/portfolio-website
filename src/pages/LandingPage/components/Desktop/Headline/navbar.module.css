@@ -55,6 +55,16 @@ a:visited {
   text-decoration: none;
 }
 
+.logoTypeWrapper {
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
+}
+
+.logoType {
+  max-width: 30%;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

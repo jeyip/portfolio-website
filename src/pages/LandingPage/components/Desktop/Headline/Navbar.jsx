@@ -1,6 +1,7 @@
 import React, { Component } from "react"
+import cx from "classnames"
 
-import "./Navbar.css"
+import styles from "./navbar.module.css"
 
 class Navbar extends Component {
   constructor(props) {
@@ -24,30 +25,29 @@ class Navbar extends Component {
           alignItems: "center",
         }}
       >
-        <div style={{ textAlign: "center", width: "200px", fontSize: "20px" }}>
+        <div className={styles.logoTypeWrapper}>
           <img
             alt="Logo for Jeremy Yip"
-            className="noHighlight"
-            style={{ maxWidth: "30%" }}
+            className={cx(styles.logoType, "noHighlight")}
             src={require("@/images/logo-icon-white.svg")}
           />
         </div>
-        <ul className="navbar">
-          <li className="navbar__item noHighlight">Home</li>
+        <ul className={styles.navbar}>
+          <li className={cx(styles.navbar__item, "noHighlight")}>Home</li>
           <li
-            className="navbar__item noHighlight"
+            className={cx(styles.navbar__item, "noHighlight")}
             onClick={() => this.handleScrollTo("workViewContainer")}
           >
             Work
           </li>
           {/* <li
-            className="navbar__item noHighlight"
+            className={cx(styles.navbar__item, "noHighlight")}
             onClick={() => this.handleScrollTo("aboutMeView")}
           >
             About
           </li> */}
           <li
-            className="navbar__item noHighlight"
+            className={cx(styles.navbar__item, "noHighlight")}
             onClick={() => this.handleScrollTo("footer")}
           >
             Contact
