@@ -33,7 +33,7 @@
   color: #fff;
 }
 
-.footer__iconContainer:hover {
+.iconWrapper:hover {
   background-color: #fff;
   color: #48bdbe;
   transition: 0.3s all;
