@@ -12,8 +12,6 @@
   height: 30vh;
   min-height: 75px;
   width: 100vw;
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 0.3s;
   opacity: 0;
   will-change: opacity;
   position: relative;
@@ -23,31 +21,69 @@
 }
 
 .profileImage {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 0.3s;
   opacity: 0;
   will-change: opacity;
+  max-height: 230px;
+  min-height: 230px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -125px;
+  left: 50%;
+  margin-left: -115px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  margin-top: 40px;
 }
 
 .title {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 0.9s;
   opacity: 0;
   will-change: opacity;
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+  font-size: 26px;
 }
 
 .secondaryTitle {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 0.9s;
   opacity: 0;
   will-change: opacity;
+  letter-spacing: 1px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
 .paragraph {
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 1.3s;
   opacity: 0;
   will-change: opacity;
+  width: 25%;
+  min-width: 275px;
+  text-align: left;
+  margin-top: 15px;
+  font-size: 16px;
+  word-spacing: 1px;
+}
+
+.fadeIn3 {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.3s;
+}
+
+.fadeIn9 {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.9s;
+}
+
+.fadeIn13 {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1.3s;
 }
 
 @keyframes fadeIn {

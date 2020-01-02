@@ -22,9 +22,9 @@ const DesktopView = ({ isLoading, setLoading }) => (
   </div>
 )
 
-const MobileView = () => (
+const MobileView = ({ isLoading, setLoading }) => (
   <div>
-    <MobileHeadline />
+    <MobileHeadline isLoading={isLoading} setLoading={setLoading} />
     <MobileWorkView />
     {/* <MobileAboutMeView /> */}
     <MobileFooter />
@@ -35,29 +35,29 @@ const App = () => {
   const [isLoading, setLoading] = useState(true)
   return (
     <div>
+      {isLoading && (
+        <div
+          style={{
+            width: "100vw",
+            height: "100vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Loader
+            type="CradleLoader"
+            color="#00BFFF"
+            height={100}
+            width={100}
+          />
+        </div>
+      )}
       <MediaQuery minDeviceWidth={481}>
-        {isLoading && (
-          <div
-            style={{
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Loader
-              type="CradleLoader"
-              color="#00BFFF"
-              height={100}
-              width={100}
-            />
-          </div>
-        )}
         <DesktopView isLoading={isLoading} setLoading={setLoading} />
       </MediaQuery>
       <MediaQuery minDeviceWidth={320} maxDeviceWidth={480}>
-        <MobileView />
+        <MobileView isLoading={isLoading} setLoading={setLoading} />
       </MediaQuery>
     </div>
   )
