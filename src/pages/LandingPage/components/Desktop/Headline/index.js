@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import cx from "classnames"
 
 import Navbar from "./Navbar"
-import Header from "../../../shared/SectionHeader"
+import SectionHeader from "../../../shared/SectionHeader"
 import Paragraph from "../../../shared/Paragraph"
 import styles from "./headline.module.css"
 
@@ -48,7 +48,7 @@ class Headline extends Component {
           <h1 className={cx(styles.title, { [styles.fadeIn9]: !isLoading })}>
             {HI_THERE}
           </h1>
-          <Header
+          <SectionHeader
             className={cx(styles.secondaryTitle, {
               [styles.fadeIn9]: !isLoading,
             })}

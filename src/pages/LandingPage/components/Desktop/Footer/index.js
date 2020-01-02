@@ -1,49 +1,34 @@
-import React, { Component } from "react"
+import React from "react"
+import cx from "classnames"
 import { FaGithubAlt, FaLinkedinIn, FaAngellist } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import SectionHeader from "@/pages/LandingPage/shared/SectionHeader"
 
-import "./footer.css"
-import IconWithHover from "./Icon"
+import styles from "./footer.module.css"
+import IconWithHover from "./IconWithHover"
 
-class Footer extends Component {
-  render() {
-    const { styles } = this.props
-
-    return (
-      <div className="footer" style={styles.footer}>
-        <div style={{ paddingTop: "35px", paddingBottom: "30px" }}>
-          <SectionHeader text="CONTACT ME" style={{ color: "#FFF" }} />
-        </div>
-        <div style={{ display: "flex", paddingBottom: "35px" }}>
-          <IconWithHover link="https://www.github.com/jeyip">
-            <FaGithubAlt size="1.5em" />
-          </IconWithHover>
-          <IconWithHover link="https://www.linkedin.com/in/jeremy-yip">
-            <FaLinkedinIn size="1.5em" />
-          </IconWithHover>
-          <IconWithHover link="mailto:jeremy.yip7@gmail.com">
-            <MdEmail size="1.5em" />
-          </IconWithHover>
-          <IconWithHover link="https://angel.co/jeremy-yip">
-            <FaAngellist size="1.5em" />
-          </IconWithHover>
-        </div>
+const Footer = () => {
+  return (
+    <div className={cx("footer", styles.footer)}>
+      <div className={styles.sectionHeaderWrapper}>
+        <SectionHeader text="CONTACT ME" className={styles.sectionHeader} />
       </div>
-    )
-  }
-}
-
-Footer.defaultProps = {
-  styles: {
-    footer: {
-      backgroundColor: "#48BDBE",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      flexDirection: "column",
-    },
-  },
+      <div className={styles.iconsWrapper}>
+        <IconWithHover link="https://www.github.com/jeyip">
+          <FaGithubAlt size="1.5em" />
+        </IconWithHover>
+        <IconWithHover link="https://www.linkedin.com/in/jeremy-yip">
+          <FaLinkedinIn size="1.5em" />
+        </IconWithHover>
+        <IconWithHover link="mailto:jeremy.yip7@gmail.com">
+          <MdEmail size="1.5em" />
+        </IconWithHover>
+        <IconWithHover link="https://angel.co/jeremy-yip">
+          <FaAngellist size="1.5em" />
+        </IconWithHover>
+      </div>
+    </div>
+  )
 }
 
 export default Footer

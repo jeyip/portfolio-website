@@ -1,0 +1,40 @@
+.footer {
+  background-color: #48bdbe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.iconsWrapper {
+  display: flex;
+  padding-bottom: 35px;
+}
+
+.iconWrapper {
+  background-color: #48bdbe;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionHeaderWrapper {
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.sectionHeader {
+  color: #fff;
+}
+
+.footer__iconContainer:hover {
+  background-color: #fff;
+  color: #48bdbe;
+  transition: 0.3s all;
+}
