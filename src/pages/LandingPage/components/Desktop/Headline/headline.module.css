@@ -10,7 +10,7 @@
 .header {
   background: linear-gradient(45deg, #4ac29a, #37b9e9);
   height: 30vh;
-  min-height: 300px;
+  min-height: 40%;
   width: 100vw;
   padding-top: 75px;
   opacity: 0;
