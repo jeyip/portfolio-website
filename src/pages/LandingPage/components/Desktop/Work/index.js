@@ -1,40 +1,24 @@
 import React, { Component } from "react"
-
+import cx from "classnames"
 import { addDesktopLayout } from "@/utils/addLayout"
 import Header from "../../../shared/SectionHeader"
-import WorkTile from "./WorkTile"
+import Tile from "./Tile"
 
-import "./workView.css"
+import styles from "./work.module.css"
 
-const workData = [
+const workSamples = [
   {
-    title: "Placeholder",
-    imageUrl: "",
+    imageUrl:
+      "https://res.cloudinary.com/jjcodepen/image/upload/v1578381710/Portfolio1_tt52te.gif",
+    originUrl: "https://codepen.io/jeyip/pen/yLyPRpa",
     id: 1,
-  },
-  {
-    title: "Placeholder",
-    imageUrl: "",
-    id: 2,
-  },
-  {
-    title: "Placeholder",
-    imageUrl: "",
-    id: 3,
   },
 ]
 
 class WorkView extends Component {
   render() {
     return (
-      <div
-        className="workViewContainer"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
+      <div className={cx(styles.workViewContainer, "workViewContainer")}>
         <div style={{ marginBottom: "30px" }}>
           <Header text="WORK" />
         </div>
@@ -42,11 +26,11 @@ class WorkView extends Component {
           style={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "space-between",
+            justifyContent: "center",
           }}
         >
-          {workData.map(data => (
-            <WorkTile data={data} key={data.id} />
+          {workSamples.map(workSample => (
+            <Tile workSample={workSample} key={workSample.id} />
           ))}
         </div>
       </div>

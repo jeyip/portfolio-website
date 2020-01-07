@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  cursor: pointer;
+  height: 400px;
+  width: 400px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
+}
+
+.container:hover {
+  opacity: 0.3;
+}
+
+/* .overlay {
+  position: absolute;
+  opacity: 0;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  background-color: #fff;
+  opacity: 1;
+} */
