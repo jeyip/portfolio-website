@@ -69,13 +69,11 @@ class Headline extends Component {
             onMouseEnter={this.handleAnimation}
           >
             <div className={styles.chevronText}>{WORK}</div>
-            <div>
-              <img
-                alt="chevron"
-                className={styles.chevron}
-                src={require("@/images/chevron.png")}
-              />
-            </div>
+            <img
+              alt="chevron"
+              className={styles.chevron}
+              src={require("@/images/chevron.png")}
+            />
           </div>
         </div>
       </div>
