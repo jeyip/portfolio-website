@@ -27,7 +27,7 @@
   align-self: center;
   border-radius: 50%;
   position: absolute;
-  bottom: -150px;
+  bottom: -115px;
   left: 50%;
   margin-left: -162.5px;
   opacity: 0;
@@ -48,7 +48,6 @@
   will-change: opacity;
   letter-spacing: 5px;
   margin-bottom: 0px;
-  margin-top: 50px;
 }
 
 .secondaryTitle {
