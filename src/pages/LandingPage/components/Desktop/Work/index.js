@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import cx from "classnames"
 import { addDesktopLayout } from "@/utils/addLayout"
 import Header from "../../../shared/SectionHeader"
@@ -8,34 +8,32 @@ import styles from "./work.module.css"
 
 const workSamples = [
   {
-    imageUrl:
+    thumbnailUrl:
       "https://res.cloudinary.com/jjcodepen/image/upload/v1578381710/Portfolio1_tt52te.gif",
     originUrl: "https://codepen.io/jeyip/pen/yLyPRpa",
     id: 1,
   },
 ]
 
-class WorkView extends Component {
-  render() {
-    return (
-      <div className={cx(styles.workViewContainer, "workViewContainer")}>
-        <div style={{ marginBottom: "30px" }}>
-          <Header text="WORK" />
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          {workSamples.map(workSample => (
-            <Tile workSample={workSample} key={workSample.id} />
-          ))}
-        </div>
+const WorkView = () => {
+  return (
+    <div className={cx(styles.workViewContainer, "workViewContainer")}>
+      <div style={{ marginBottom: "30px" }}>
+        <Header text="WORK" />
       </div>
-    )
-  }
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        {workSamples.map(({ id, thumbnailUrl, originUrl }) => (
+          <Tile originUrl={originUrl} thumbnailUrl={thumbnailUrl} key={id} />
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default addDesktopLayout(WorkView)
