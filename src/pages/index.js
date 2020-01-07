@@ -9,7 +9,7 @@ import Work from "./LandingPage/components/Desktop/Work"
 import MobileAboutMeView from "./LandingPage/components/Mobile/AboutMeView"
 import MobileFooter from "./LandingPage/components/Mobile/Footer"
 import MobileHeadline from "./LandingPage/components/Mobile/Headline"
-import MobileWorkView from "./LandingPage/components/Mobile/WorkView"
+import MobileWork from "./LandingPage/components/Mobile/Work"
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
@@ -25,7 +25,7 @@ const DesktopView = ({ isLoading, setLoading }) => (
 const MobileView = ({ isLoading, setLoading }) => (
   <div>
     <MobileHeadline isLoading={isLoading} setLoading={setLoading} />
-    <MobileWorkView />
+    <MobileWork />
     {/* <MobileAboutMeView /> */}
     <MobileFooter />
   </div>

@@ -2,25 +2,16 @@ import React, { Component } from "react"
 
 import { addMobileLayout } from "../../../../../utils/addLayout"
 import Header from "../../../shared/SectionHeader"
-import WorkTile from "./WorkTile.jsx"
+import Tile from "./Tile.js"
 
 import "./workView.css"
 
-const workData = [
+const workSamples = [
   {
-    title: "Placeholder",
-    imageUrl: "",
+    thumbnailUrl:
+      "https://res.cloudinary.com/jjcodepen/image/upload/v1578381710/Portfolio1_tt52te.gif",
+    originUrl: "https://codepen.io/jeyip/pen/yLyPRpa",
     id: 1,
-  },
-  {
-    title: "Placeholder",
-    imageUrl: "",
-    id: 2,
-  },
-  {
-    title: "Placeholder",
-    imageUrl: "",
-    id: 3,
   },
 ]
 
@@ -41,11 +32,12 @@ class WorkView extends Component {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            alignItems: "center",
             height: "70vh",
           }}
         >
-          {workData.map(data => (
-            <WorkTile data={data} key={data.id} />
+          {workSamples.map(({ originUrl, thumbnailUrl, id }) => (
+            <Tile originUrl={originUrl} thumbnailUrl={thumbnailUrl} key={id} />
           ))}
         </div>
       </div>
