@@ -9,6 +9,12 @@ import "./workView.css"
 const workSamples = [
   {
     thumbnailUrl:
+      "https://res.cloudinary.com/jjcodepen/image/upload/c_fit,h_400/v1578649238/Portfolio2_doixla.gif",
+    originUrl: "https://codepen.io/jeyip/pen/povpoBK",
+    id: 1,
+  },
+  {
+    thumbnailUrl:
       "https://res.cloudinary.com/jjcodepen/image/upload/v1578381710/Portfolio1_tt52te.gif",
     originUrl: "https://codepen.io/jeyip/pen/yLyPRpa",
     id: 1,
