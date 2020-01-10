@@ -29,6 +29,7 @@ class WorkView extends Component {
           display: "flex",
           justifyContent: "flex-start",
           flexDirection: "column",
+          height: "700px",
         }}
         className="mobileWorkViewContainer"
       >
@@ -39,11 +40,16 @@ class WorkView extends Component {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            height: "70vh",
           }}
         >
           {workSamples.map(({ originUrl, thumbnailUrl, id }) => (
-            <Tile originUrl={originUrl} thumbnailUrl={thumbnailUrl} key={id} />
+            <div key={id} style={{ marginTop: "10px" }}>
+              <Tile
+                originUrl={originUrl}
+                thumbnailUrl={thumbnailUrl}
+                key={id}
+              />
+            </div>
           ))}
         </div>
       </div>
