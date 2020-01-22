@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md"
 import Header from "@/components/LandingPage/shared/SectionHeader"
 
 import styles from "./footer.module.css"
-import IconWithHover from "./IconWithHover"
+import HoverableIcon from "./HoverableIcon"
 
 const Footer = () => {
   return (
@@ -14,18 +14,18 @@ const Footer = () => {
         <Header text="CONTACT ME" className={styles.sectionHeader} />
       </div>
       <div className={styles.iconsWrapper}>
-        <IconWithHover link="https://www.github.com/jeyip">
+        <HoverableIcon link="https://www.github.com/jeyip">
           <FaGithubAlt size="1.5em" />
-        </IconWithHover>
-        <IconWithHover link="https://www.linkedin.com/in/jeremy-yip">
+        </HoverableIcon>
+        <HoverableIcon link="https://www.linkedin.com/in/jeremy-yip">
           <FaLinkedinIn size="1.5em" />
-        </IconWithHover>
-        <IconWithHover link="mailto:jeremy.yip7@gmail.com">
+        </HoverableIcon>
+        <HoverableIcon link="mailto:jeremy.yip7@gmail.com">
           <MdEmail size="1.5em" />
-        </IconWithHover>
-        <IconWithHover link="https://angel.co/jeremy-yip">
+        </HoverableIcon>
+        <HoverableIcon link="https://angel.co/jeremy-yip">
           <FaAngellist size="1.5em" />
-        </IconWithHover>
+        </HoverableIcon>
       </div>
     </div>
   )
