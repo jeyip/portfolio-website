@@ -1,0 +1,22 @@
+.hoverableIconLink {
+  margin: 0px 15px;
+}
+
+.hoverableIconContainer {
+  background-color: #48bdbe;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoverableIconContainer:hover {
+  background-color: #fff;
+  color: #48bdbe;
+  transition: 0.3s all;
+}

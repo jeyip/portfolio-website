@@ -1,0 +1,25 @@
+.footerContainer {
+  align-items: center;
+  justify-content: center;
+  background-color: #48bdbe;
+  height: 10vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.mediumIcon {
+  font-size: 18px;
+}
+
+.githubIcon {
+  font-size: 18px;
+}
+
+.linkedinIcon {
+  font-size: 20px;
+}
