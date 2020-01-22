@@ -10,7 +10,7 @@ import IconWithHover from "./IconWithHover"
 const Footer = () => {
   return (
     <div className={cx("footer", styles.footer)}>
-      <div className={styles.sectionHeaderWrapper}>
+      <div className={styles.headerWrapper}>
         <Header text="CONTACT ME" className={styles.sectionHeader} />
       </div>
       <div className={styles.iconsWrapper}>
