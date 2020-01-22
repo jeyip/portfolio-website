@@ -1,10 +1,10 @@
 import React from "react"
-import cx from "classnames"
-import { addDesktopLayout } from "@/utils/addLayout"
-import Header from "@/components/LandingPage/shared/SectionHeader"
-import Tile from "./Tile"
 
-import styles from "./work.module.css"
+import { addMobileLayout } from "@/utils/addLayout"
+import Header from "@/components/LandingPage/shared/SectionHeader"
+import Tile from "./Tile.js"
+
+import styles from "./workSamples.module.css"
 
 const workSamples = [
   {
@@ -17,18 +17,18 @@ const workSamples = [
     thumbnailUrl:
       "https://res.cloudinary.com/jjcodepen/image/upload/v1578381710/Portfolio1_tt52te.gif",
     originUrl: "https://codepen.io/jeyip/pen/yLyPRpa",
-    id: 2,
+    id: 1,
   },
 ]
 
-const WorkView = () => {
+const WorkSamples = () => {
   return (
-    <div className={cx(styles.workViewContainer, "workViewContainer")}>
+    <div className={styles.workSamplesContainer}>
       <div className={styles.headerContainer}>
         <Header text="WORK" />
       </div>
       <div className={styles.tilesContainer}>
-        {workSamples.map(({ id, thumbnailUrl, originUrl }) => (
+        {workSamples.map(({ originUrl, thumbnailUrl, id }) => (
           <div key={id} className={styles.tileContainer}>
             <Tile originUrl={originUrl} thumbnailUrl={thumbnailUrl} key={id} />
           </div>
@@ -38,4 +38,4 @@ const WorkView = () => {
   )
 }
 
-export default addDesktopLayout(WorkView)
+export default addMobileLayout(WorkSamples)

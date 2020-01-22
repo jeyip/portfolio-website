@@ -4,17 +4,17 @@ import MediaQuery from "react-responsive"
 
 import Footer from "../components/LandingPage/Desktop/Footer"
 import Headline from "../components/LandingPage/Desktop/Headline"
-import Work from "../components/LandingPage/Desktop/Work"
+import WorkSamples from "../components/LandingPage/Desktop/WorkSamples"
 import MobileFooter from "../components/LandingPage/Mobile/Footer"
 import MobileHeadline from "../components/LandingPage/Mobile/Headline"
-import MobileWork from "../components/LandingPage/Mobile/Work"
+import MobileWorkSamples from "../components/LandingPage/Mobile/WorkSamples"
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 const DesktopView = ({ isLoading, setLoading }) => (
   <div>
     <Headline isLoading={isLoading} setLoading={setLoading} />
-    <Work />
+    <WorkSamples />
     <Footer />
   </div>
 )
@@ -22,7 +22,7 @@ const DesktopView = ({ isLoading, setLoading }) => (
 const MobileView = ({ isLoading, setLoading }) => (
   <div>
     <MobileHeadline isLoading={isLoading} setLoading={setLoading} />
-    <MobileWork />
+    <MobileWorkSamples />
     <MobileFooter />
   </div>
 )

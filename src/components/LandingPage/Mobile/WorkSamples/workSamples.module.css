@@ -1,0 +1,34 @@
+.workSamplesContainer {
+  height: 90vh;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1.3s;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 700px;
+}
+
+.headerContainer {
+  padding-top: 15px;
+}
+
+.tilesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tileContainer {
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
