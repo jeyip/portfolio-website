@@ -5,10 +5,7 @@ import styles from "./paragraph.module.css"
 
 const Paragraph = ({ className, text, style }) => {
   return (
-    <div
-      className={cx(styles.paragraphWrapper, className)}
-      style={{ ...style }}
-    >
+    <div className={cx(styles.paragraphWrapper, className)} style={style}>
       <p style={{ fontFamily: "Open Sans", margin: "0px" }}>{text}</p>
     </div>
   )
