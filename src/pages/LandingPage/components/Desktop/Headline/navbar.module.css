@@ -8,6 +8,13 @@ a:visited {
   text-decoration: none;
 }
 
+.navbarContainer {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -21,14 +28,14 @@ a:visited {
   max-width: 400px;
 }
 
-.navbar__item {
+.navbarItem {
   border-bottom: none;
   padding-bottom: 5px;
   cursor: pointer;
   position: relative;
 }
 
-.navbar__item:before {
+.navbarItem:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -43,7 +50,7 @@ a:visited {
   transition: all 0.3s ease-in-out 0s; */
 }
 
-.navbar__item:hover:before {
+.navbarItem:hover:before {
   visibility: visible;
   animation: fadeIn 0.3s forwards;
 }
