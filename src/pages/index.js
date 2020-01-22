@@ -2,11 +2,9 @@ import React, { useState } from "react"
 import Loader from "react-loader-spinner"
 import MediaQuery from "react-responsive"
 
-import AboutMe from "./LandingPage/components/Desktop/AboutMe"
 import Footer from "./LandingPage/components/Desktop/Footer"
 import Headline from "./LandingPage/components/Desktop/Headline"
 import Work from "./LandingPage/components/Desktop/Work"
-import MobileAboutMeView from "./LandingPage/components/Mobile/AboutMeView"
 import MobileFooter from "./LandingPage/components/Mobile/Footer"
 import MobileHeadline from "./LandingPage/components/Mobile/Headline"
 import MobileWork from "./LandingPage/components/Mobile/Work"
@@ -17,7 +15,6 @@ const DesktopView = ({ isLoading, setLoading }) => (
   <div>
     <Headline isLoading={isLoading} setLoading={setLoading} />
     <Work />
-    {/* <AboutMe /> */}
     <Footer />
   </div>
 )
@@ -26,7 +23,6 @@ const MobileView = ({ isLoading, setLoading }) => (
   <div>
     <MobileHeadline isLoading={isLoading} setLoading={setLoading} />
     <MobileWork />
-    {/* <MobileAboutMeView /> */}
     <MobileFooter />
   </div>
 )
