@@ -24,18 +24,12 @@ const workSamples = [
 const WorkView = () => {
   return (
     <div className={cx(styles.workViewContainer, "workViewContainer")}>
-      <div style={{ marginBottom: "30px" }}>
+      <div className={styles.headerContainer}>
         <Header text="WORK" />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "flex-start",
-        }}
-      >
+      <div className={styles.tilesContainer}>
         {workSamples.map(({ id, thumbnailUrl, originUrl }) => (
-          <div key={id} style={{ marginBottom: "20px", marginRight: "30px" }}>
+          <div key={id} className={styles.tileContainer}>
             <Tile originUrl={originUrl} thumbnailUrl={thumbnailUrl} key={id} />
           </div>
         ))}

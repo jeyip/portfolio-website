@@ -5,3 +5,18 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.headerContainer {
+  margin-bottom: 30px;
+}
+
+.tilesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tileContainer {
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
