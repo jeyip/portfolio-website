@@ -2,7 +2,7 @@ import React from "react"
 import cx from "classnames"
 import { FaGithubAlt, FaLinkedinIn, FaAngellist } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
-import SectionHeader from "@/pages/LandingPage/shared/SectionHeader"
+import Header from "@/components/LandingPage/shared/SectionHeader"
 
 import styles from "./footer.module.css"
 import IconWithHover from "./IconWithHover"
@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className={cx("footer", styles.footer)}>
       <div className={styles.sectionHeaderWrapper}>
-        <SectionHeader text="CONTACT ME" className={styles.sectionHeader} />
+        <Header text="CONTACT ME" className={styles.sectionHeader} />
       </div>
       <div className={styles.iconsWrapper}>
         <IconWithHover link="https://www.github.com/jeyip">

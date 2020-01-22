@@ -2,12 +2,12 @@ import React, { useState } from "react"
 import Loader from "react-loader-spinner"
 import MediaQuery from "react-responsive"
 
-import Footer from "./LandingPage/components/Desktop/Footer"
-import Headline from "./LandingPage/components/Desktop/Headline"
-import Work from "./LandingPage/components/Desktop/Work"
-import MobileFooter from "./LandingPage/components/Mobile/Footer"
-import MobileHeadline from "./LandingPage/components/Mobile/Headline"
-import MobileWork from "./LandingPage/components/Mobile/Work"
+import Footer from "../components/LandingPage/Desktop/Footer"
+import Headline from "../components/LandingPage/Desktop/Headline"
+import Work from "../components/LandingPage/Desktop/Work"
+import MobileFooter from "../components/LandingPage/Mobile/Footer"
+import MobileHeadline from "../components/LandingPage/Mobile/Headline"
+import MobileWork from "../components/LandingPage/Mobile/Work"
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 

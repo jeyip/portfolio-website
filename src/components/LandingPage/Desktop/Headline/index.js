@@ -2,8 +2,8 @@ import React from "react"
 import cx from "classnames"
 
 import Navbar from "./Navbar"
-import SectionHeader from "../../../shared/SectionHeader"
-import Paragraph from "../../../shared/Paragraph"
+import Header from "@/components/LandingPage/shared/SectionHeader"
+import Paragraph from "@/components/LandingPage/shared/Paragraph"
 import { handleScrollTo } from "./utils.js"
 import styles from "./headline.module.css"
 
@@ -36,7 +36,7 @@ const Headline = ({ isLoading, setLoading }) => {
         <h1 className={cx(styles.title, { [styles.fadeIn9]: !isLoading })}>
           {HI_THERE}
         </h1>
-        <SectionHeader
+        <Header
           className={cx(styles.secondaryTitle, {
             [styles.fadeIn9]: !isLoading,
           })}

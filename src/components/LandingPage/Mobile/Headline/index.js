@@ -1,8 +1,8 @@
 import React from "react"
 import cx from "classnames"
 
-import Header from "../../../shared/SectionHeader"
-import Paragraph from "../../../shared/Paragraph"
+import Header from "@/components/LandingPage/shared/SectionHeader"
+import Paragraph from "@/components/LandingPage/shared/Paragraph"
 import styles from "./headline.module.css"
 
 const INTRO = `After the Peace Corps, I cultivated a passion for computer science.

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 
-import Header from "../../../shared/SectionHeader"
-import Paragraph from "../../../shared/Paragraph"
+import Header from "@/components/LandingPage/shared/SectionHeader"
+import Paragraph from "@/components/LandingPage/shared/Paragraph"
 
 const skillsText = `I believe deeply in the value of user-centric design.
 Technology is a tool, and delight is important, but the first priority of any

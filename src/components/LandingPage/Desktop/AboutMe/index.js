@@ -1,8 +1,8 @@
 import React from "react"
 
 import { addDesktopLayout } from "../../../../../utils/addLayout"
-import Header from "../../../shared/SectionHeader"
-import Paragraph from "../../../shared/Paragraph"
+import Header from "@/components/LandingPage/shared/SectionHeader"
+import Paragraph from "@/components/LandingPage/shared/Paragraph"
 import Skills from "./Skills"
 
 import styles from "./aboutMe.module.css"

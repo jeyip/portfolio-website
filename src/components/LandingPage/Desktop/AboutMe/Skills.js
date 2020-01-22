@@ -1,7 +1,7 @@
 import React from "react"
 
-import Header from "../../../shared/SectionHeader"
-import Paragraph from "../../../shared/Paragraph"
+import Header from "@/components/LandingPage/shared/SectionHeader"
+import Paragraph from "@/components/LandingPage/shared/Paragraph"
 
 import styles from "./skills.module.css"
 

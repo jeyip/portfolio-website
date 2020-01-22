@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 
-import { addMobileLayout } from "../../../../../utils/addLayout"
-import Header from "../../../shared/SectionHeader"
+import { addMobileLayout } from "@/utils/addLayout"
+import Header from "@/components/LandingPage/shared/SectionHeader"
 import Tile from "./Tile.js"
 
 import "./workView.css"

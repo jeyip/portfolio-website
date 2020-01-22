@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 
-import { addMobileLayout } from "../../../../../utils/addLayout"
-import Header from "../../../shared/SectionHeader"
-import Paragraph from "../../../shared/Paragraph"
+import { addMobileLayout } from "@/utils/addLayout"
+import Header from "@/components/LandingPage/shared/SectionHeader"
+import Paragraph from "@/components/LandingPage/shared/Paragraph"
 import SkillsSection from "./SkillsSection"
 
 import "./AboutMeView.css"
@@ -25,7 +25,7 @@ class AboutMeView extends Component {
           <Header text="ABOUT ME" />
         </div>
         <Paragraph text={aboutMeText} />
-        {/* <SkillsSection /> */}
+        <SkillsSection />
       </div>
     )
   }

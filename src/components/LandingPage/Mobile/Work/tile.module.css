@@ -11,19 +11,3 @@
 .container:hover {
   opacity: 0.3;
 }
-
-/* .overlay {
-  position: absolute;
-  opacity: 0;
-  height: 400px;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease;
-}
-
-.overlay:hover {
-  background-color: #fff;
-  opacity: 1;
-} */

@@ -1,7 +1,7 @@
 import React from "react"
 import cx from "classnames"
 import { addDesktopLayout } from "@/utils/addLayout"
-import Header from "../../../shared/SectionHeader"
+import Header from "@/components/LandingPage/shared/SectionHeader"
 import Tile from "./Tile"
 
 import styles from "./work.module.css"
