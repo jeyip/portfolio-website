@@ -1,0 +1,25 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  width: 50%;
+}
+
+.headerContainer {
+  margin-bottom: 30px;
+}
+
+.skillBoxesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillBoxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillBoxImage {
+  height: 200px;
+  width: auto;
+}

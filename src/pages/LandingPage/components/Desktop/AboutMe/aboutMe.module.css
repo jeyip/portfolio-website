@@ -1,0 +1,13 @@
+.aboutMeContainer {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+}
+
+.headerContainer {
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  width: 50%;
+}
